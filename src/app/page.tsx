@@ -32,28 +32,27 @@ export default function Home() {
           {/* Desktop Layout: Hero + Carousel side by side, then FloorPlans + MarketComps */}
           
           {/* Main Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
-            {/* Left Column - Hero Content (Desktop) / Mobile Flow */}
-            <div className="space-y-8">
-              {/* Hero Component - Title, Description, Map */}
-              <div className="order-1">
-                <Hero />
-              </div>
-
-              {/* Floor Plans Component - Shows after Hero on mobile, stays in left column on desktop */}
-              <div className="order-3 lg:order-2">
-                <FloorPlans onOpenFloorPlan={openFloorPlan} />
-              </div>
-
-              {/* Market Comparables Component - Shows after FloorPlans on mobile, stays in left column on desktop */}
-              <div className="order-4 lg:order-3">
-                <MarketComps />
-              </div>
+          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:items-start mb-16">
+            {/* Mobile: Sequential Order / Desktop: Left Column */}
+            
+            {/* Hero Component - Always first */}
+            <div className="lg:order-1">
+              <Hero />
             </div>
 
-            {/* Right Column - Carousel (Desktop) / Shows second on mobile */}
-            <div className="order-2 lg:sticky lg:top-6">
+            {/* Carousel - Second on mobile, right column on desktop */}
+            <div className="lg:order-2 lg:sticky lg:top-6 lg:row-span-3">
               <Carousel />
+            </div>
+
+            {/* Floor Plans - Third on mobile, back to left column on desktop */}
+            <div className="lg:order-3">
+              <FloorPlans onOpenFloorPlan={openFloorPlan} />
+            </div>
+
+            {/* Market Comparables - Fourth on mobile, stays in left column on desktop */}
+            <div className="lg:order-4">
+              <MarketComps />
             </div>
           </div>
           
