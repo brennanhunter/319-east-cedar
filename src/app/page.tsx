@@ -4,6 +4,8 @@ import Image from 'next/image';
 import { X, Map } from 'lucide-react';
 import Carousel from '@/components/Carousel';
 import Hero from '@/components/Hero';
+import FloorPlans from '@/components/FloorPlans';
+import MarketComps from '@/components/MarketComps';
 import PropertyDetails from '@/components/PropertyDetails';
 
 export default function Home() {
@@ -23,15 +25,36 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-cream-white">
-      {/* Hero Section */}
+      {/* Main Content */}
       <section className="relative">
         <div className="container mx-auto px-6 py-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-            {/* Left Content - Hero Component */}
-            <Hero onOpenFloorPlan={openFloorPlan} />
+          {/* Mobile Layout: Hero → Carousel → FloorPlans → MarketComps */}
+          {/* Desktop Layout: Hero + Carousel side by side, then FloorPlans + MarketComps */}
+          
+          {/* Main Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
+            {/* Left Column - Hero Content (Desktop) / Mobile Flow */}
+            <div className="space-y-8">
+              {/* Hero Component - Title, Description, Map */}
+              <div className="order-1">
+                <Hero />
+              </div>
 
-            {/* Right Content - Photo Carousel */}
-            <Carousel />
+              {/* Floor Plans Component - Shows after Hero on mobile, stays in left column on desktop */}
+              <div className="order-3 lg:order-2">
+                <FloorPlans onOpenFloorPlan={openFloorPlan} />
+              </div>
+
+              {/* Market Comparables Component - Shows after FloorPlans on mobile, stays in left column on desktop */}
+              <div className="order-4 lg:order-3">
+                <MarketComps />
+              </div>
+            </div>
+
+            {/* Right Column - Carousel (Desktop) / Shows second on mobile */}
+            <div className="order-2 lg:sticky lg:top-6">
+              <Carousel />
+            </div>
           </div>
           
           {/* Property Details Component */}
