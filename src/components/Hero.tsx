@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { MapPin, Home, ExternalLink, ChevronDown, TrendingUp, Map } from 'lucide-react';
+import { MapPin, ExternalLink, ChevronDown, TrendingUp, Map } from 'lucide-react';
 
 interface HeroProps {
   onOpenFloorPlan: (house: string) => void;

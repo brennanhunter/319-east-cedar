@@ -1,5 +1,4 @@
 'use client';
-import { useState } from 'react';
 import Image from 'next/image';
 import { Eye, Maximize } from 'lucide-react';
 
@@ -8,14 +7,10 @@ interface VirtualWalkthroughProps {
 }
 
 export default function VirtualWalkthrough({ className = "" }: VirtualWalkthroughProps) {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
     <div className={className}>
       <div 
         className="relative aspect-[4/3] rounded-lg overflow-hidden mb-4 bg-gray-100 cursor-pointer group"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
       >
         <Image
           src="/placeholder-photo.png"

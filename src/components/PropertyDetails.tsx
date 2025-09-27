@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { Home, HousePlus, ChevronDown, Zap, Star, Building, Wrench, TrendingUp, HouseHeart } from 'lucide-react';
+import { Home, HousePlus, ChevronDown, Zap, Star, Building, Wrench, HouseHeart } from 'lucide-react';
 
 export default function PropertyDetails() {
   const [isDetailsOpen, setIsDetailsOpen] = useState(false);

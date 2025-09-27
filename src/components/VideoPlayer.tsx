@@ -255,27 +255,3 @@ export default function VideoPlayer({
     </div>
   );
 }
-
-// CSS for custom slider styling (add to your global CSS if needed)
-const sliderStyles = `
-.slider::-webkit-slider-thumb {
-  appearance: none;
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  background: #588c3f;
-  cursor: pointer;
-  border: 2px solid #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
-.slider::-moz-range-thumb {
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  background: #588c3f;
-  cursor: pointer;
-  border: 2px solid #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-`;
