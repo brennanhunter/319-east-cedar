@@ -196,7 +196,7 @@ export default function PropertyDetails() {
                     <ul className="space-y-1 text-gray-600">
                       <li>• EV charging station</li>
                       <li>• RV hookup</li>
-                      <li>• Garage & carport</li>
+                      <li>• Garage & Carport</li>
                       <li>• Security system ready</li>
                       <li>• High-speed internet ready</li>
                     </ul>
