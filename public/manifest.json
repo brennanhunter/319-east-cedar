@@ -1,0 +1,27 @@
+{
+  "name": "319 E Cedar Drive - Tuttle Oklahoma Real Estate",
+  "short_name": "319 E Cedar",
+  "description": "Two homes on 2 acres in Tuttle, OK. Perfect for multi-generational living with A-rated schools.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f4f0",
+  "theme_color": "#588c3f",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-512.png", 
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["business", "real-estate"],
+  "lang": "en-US",
+  "dir": "ltr"
+}
