@@ -5,16 +5,20 @@ export const metadata: Metadata = {
   title: "319 E Cedar Drive, Tuttle OK - Two Homes on 2 Acres | $749,999",
   description: "Stunning property featuring two complete homes on 2 wooded acres in Tuttle, OK. Main house (2,751 sq ft) + brand new ADA-accessible guest house (1,200 sq ft). A-rated schools, modern amenities, perfect for multi-generational living.",
   keywords: [
+    "319 E Cedar Drive Tuttle",
+    "319 East Cedar Drive Oklahoma", 
     "Tuttle Oklahoma real estate",
-    "two homes one property",
-    "multi-generational living",
-    "ADA accessible home",
-    "Tuttle schools",
-    "319 E Cedar Drive",
-    "Oklahoma property for sale",
-    "2 acres wooded lot",
-    "guest house",
-    "Grady County"
+    "two homes one property Tuttle OK",
+    "multi-generational living Tuttle",
+    "ADA accessible home Tuttle Oklahoma",
+    "Tuttle Public Schools homes for sale",
+    "Tuttle school district property",
+    "2 acres Tuttle Oklahoma",
+    "guest house Tuttle OK",
+    "Grady County Oklahoma real estate",
+    "Cedar Drive Tuttle homes",
+    "Oklahoma homes with guest house",
+    "Tuttle OK fiber internet homes"
   ],
   authors: [{ name: "Real Estate Professional" }],
   creator: "Professional Real Estate Marketing",
@@ -24,14 +28,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://319-east-cedar.vercel.app'),
+  metadataBase: new URL('https://www.319ecedar.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "319 E Cedar Drive, Tuttle OK - Two Homes on 2 Acres",
     description: "Stunning property featuring two complete homes on 2 wooded acres in Tuttle, OK. Perfect for multi-generational living with A-rated schools and modern amenities.",
-    url: 'https://319-east-cedar.vercel.app',
+    url: 'https://www.319ecedar.com',
     siteName: '319 E Cedar Drive - Tuttle Oklahoma Real Estate',
     type: 'website',
     locale: 'en_US',
@@ -114,11 +118,11 @@ export default function RootLayout({
               "@type": "RealEstateListing",
               "name": "319 E Cedar Drive - Two Homes on 2 Acres",
               "description": "Stunning property featuring two complete homes on 2 wooded acres in Tuttle, OK. Main house (2,751 sq ft) + brand new ADA-accessible guest house (1,200 sq ft).",
-              "url": "https://319-east-cedar.vercel.app",
+              "url": "https://www.319ecedar.com",
               "image": [
-                "https://319-east-cedar.vercel.app/photos/arial1.jpg",
-                "https://319-east-cedar.vercel.app/photos/house1-front.webp",
-                "https://319-east-cedar.vercel.app/photos/house2-front.webp"
+                "https://www.319ecedar.com/photos/arial1.jpg",
+                "https://www.319ecedar.com/photos/house1-front.webp",
+                "https://www.319ecedar.com/photos/house2-front.webp"
               ],
               "address": {
                 "@type": "PostalAddress",

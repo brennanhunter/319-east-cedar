@@ -26,6 +26,12 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-cream-white">
+      {/* SEO Content - Hidden visually but crawlable */}
+      <div className="sr-only">
+        <h1>319 E Cedar Drive Tuttle Oklahoma - Two Homes for Sale on 2 Acres</h1>
+        <p>Discover this exceptional Tuttle Oklahoma real estate opportunity featuring two complete homes on 2 wooded acres. The main house offers 2,751 square feet with 3 bedrooms and 2.5 bathrooms, while the brand new ADA-accessible guest house provides 1,200 square feet with 2 bedrooms and 1 bathroom. Perfect for multi-generational living in the highly-rated Tuttle school district.</p>
+      </div>
+      
       {/* Main Content */}
       <section className="relative">
         <div className="container mx-auto px-6 py-12">
