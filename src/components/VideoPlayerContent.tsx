@@ -12,7 +12,7 @@ interface VideoPlayerContentProps {
 }
 
 export default function VideoPlayerContent({ 
-  src = '/placeholder-video.mp4',
+  src = '/videos/VideoTour.mp4',
   poster,
   className = '',
   autoPlay = false,

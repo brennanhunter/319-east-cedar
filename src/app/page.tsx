@@ -7,6 +7,7 @@ import Hero from '@/components/Hero';
 import FloorPlans from '@/components/FloorPlans';
 import MarketComps from '@/components/MarketComps';
 import PropertyDetails from '@/components/PropertyDetails';
+import Tuttle from '@/components/Tuttle';
 
 export default function Home() {
   const [isFloorPlanOpen, setIsFloorPlanOpen] = useState(false);
@@ -60,6 +61,9 @@ export default function Home() {
           <PropertyDetails />
         </div>
       </section>
+
+      {/* Tuttle Section */}
+      <Tuttle />
 
       {/* Floor Plan Lightbox Modal */}
       {isFloorPlanOpen && (

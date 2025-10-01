@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import { Eye, Maximize } from 'lucide-react';
 
 interface VirtualWalkthroughProps {
@@ -10,33 +9,27 @@ export default function VirtualWalkthrough({ className = "" }: VirtualWalkthroug
   return (
     <div className={className}>
       <div 
-        className="relative aspect-[4/3] rounded-lg overflow-hidden mb-4 bg-gray-100 cursor-pointer group"
+        className="relative aspect-[16/9] rounded-lg overflow-hidden mb-4 bg-gray-100"
       >
-        <Image
-          src="/placeholder-photo.png"
-          alt="Virtual Walkthrough"
-          fill
-          className="object-cover transition-all duration-500 group-hover:scale-105"
-          sizes="(max-width: 768px) 100vw, 50vw"
+        <iframe 
+          src="https://www.zillow.com/view-imx/410bbdbd-729f-41de-b048-b559219e9898?wl=true&setAttribution=mls&initialViewType=pano" 
+          className="w-full h-full rounded-lg"
+          style={{ border: 0 }} 
+          allow="fullscreen"
+          title="3D Virtual Tour - 319 E Cedar Drive"
         />
-        
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
-          <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/70 text-white px-4 py-2 rounded-full text-sm flex items-center space-x-2">
-            <Eye className="w-4 h-4" />
-            <span>Start Virtual Tour</span>
-          </div>
+
+        {/* Live Tour Badge */}
+        <div className="absolute top-2 left-2 bg-money-green text-cream-white px-3 py-1 rounded-full text-sm font-medium shadow-lg flex items-center space-x-2">
+          <Eye className="w-3 h-3" />
+          <span>Live 3D Tour</span>
         </div>
 
-        {/* Coming Soon Badge */}
-        <div className="absolute top-2 left-2 bg-money-green text-cream-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">
-          Coming Soon
+        {/* Fullscreen Hint */}
+        <div className="absolute top-2 right-2 bg-black/70 text-white px-3 py-1 rounded-full text-xs flex items-center space-x-1 opacity-75">
+          <Maximize className="w-3 h-3" />
+          <span>Click for fullscreen</span>
         </div>
-
-        {/* Expand Button */}
-        <button className="absolute top-2 right-2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors opacity-0 group-hover:opacity-100">
-          <Maximize className="w-4 h-4" />
-        </button>
       </div>
 
       {/* Info Section */}

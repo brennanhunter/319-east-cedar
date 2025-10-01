@@ -12,8 +12,30 @@ export default function CarouselContent({ className = "" }: CarouselContentProps
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const [lightboxPhoto, setLightboxPhoto] = useState(0);
 
-  // All property photos (all 50 photos)
+  // Format photo titles for display
+  const formatPhotoTitle = (filename: string) => {
+    return filename
+      .replace(/\.(webp|jpg|avif)$/i, '') // Remove file extensions
+      .replace(/-/g, ' ') // Replace hyphens with spaces
+      .replace(/house1/gi, 'main house') // Replace house1 with main house
+      .replace(/house2/gi, 'guest house') // Replace house2 with guest house  
+      .replace(/house 2/gi, 'guest house') // Replace "house 2" with guest house
+      .replace(/arial(\d+)/gi, 'aerial view $1') // Format aerial1 -> Aerial View 1
+      .replace(/ariel(\d+)/gi, 'aerial view $1') // Handle misspelling ariel -> aerial
+      .replace(/second house/gi, 'guest house') // Replace second house references
+      .replace(/\b\w+/g, (word) => word.charAt(0).toUpperCase() + word.slice(1)); // Title case
+  };
+
+  // All property photos (all 56 photos including aerials)
   const photos = [
+    // Aerial Views
+    'arial1.jpg',
+    'arial2.jpg',
+    'arial3.jpg',
+    'arial4.jpg',
+    'ariel5-second-house.jpg',
+    'arial6-second-house.jpg',
+    // Property Photos
     'house1-front.webp',
     'house2-front.webp', 
     'house1-front-angle.webp',
@@ -53,8 +75,8 @@ export default function CarouselContent({ className = "" }: CarouselContentProps
     'house2-living-room-entry.webp',
     'house2-living-room-kitchen.webp',
     'house2-dining.webp',
-    'house2-kitchen.webp',
-    'house2-kitchen-wide.webp',
+    'house-2-kitchen.webp',
+    'house-2-kitchen-wide.webp',
     'house2-stove.webp',
     'house2-bedroom.webp',
     'house2-room2.webp',
@@ -229,7 +251,7 @@ export default function CarouselContent({ className = "" }: CarouselContentProps
             {/* Photo Info */}
             <div className="absolute bottom-4 left-4 bg-black/70 text-white px-4 py-2 rounded-lg">
               <p className="text-sm font-medium">319 E Cedar Dr - {lightboxPhoto + 1} of {photos.length}</p>
-              <p className="text-xs text-gray-300">{photos[lightboxPhoto].replace('.webp', '').replace(/-/g, ' ').replace(/house1/g, 'Main House').replace(/house2/g, 'Guest House')}</p>
+              <p className="text-xs text-gray-300">{formatPhotoTitle(photos[lightboxPhoto])}</p>
             </div>
 
             {/* Thumbnail Strip */}
