@@ -262,9 +262,14 @@ export default function Tuttle({ className = "" }: TuttleProps) {
             <button className="px-6 py-3 bg-white text-space-cadet rounded-lg font-semibold hover:bg-cream-white transition-colors">
               Schedule a Tour
             </button>
-            <button className="px-6 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-space-cadet transition-colors">
+            <a 
+              href="https://www.tuttleok.gov/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-space-cadet transition-colors inline-block text-center"
+            >
               Learn More About Tuttle
-            </button>
+            </a>
           </div>
         </div>
       </div>
