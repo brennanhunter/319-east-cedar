@@ -77,7 +77,7 @@ export default function MediaContainer({
           {/* Property Details */}
           <div className="space-y-3 mt-4">
             <h3 className="text-xl font-bold text-space-cadet">
-              <span style={{ fontFamily: 'Avenir, Avenir Next, sans-serif' }}>$749,999</span>
+              <span style={{ fontFamily: 'Avenir, Avenir Next, sans-serif' }}>$739,999</span>
             </h3>
             <p className="text-gray-600">5 beds • 4 baths • 3,951 sq ft • 2 acres</p>
             <p className="text-sm text-gray-500">319 E Cedar Dr, Tuttle, OK 73089</p>
@@ -86,14 +86,14 @@ export default function MediaContainer({
       </div>
       
       {/* Floating Feature Tags */}
-      <div className="absolute -right-4 top-4 space-y-2">
-        <div className="bg-money-green text-cream-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">
+      <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 md:top-4 md:right-4 md:left-auto md:transform-none md:translate-x-0 flex flex-nowrap gap-1 justify-center md:flex-col md:space-y-2 md:justify-start">
+        <div className="bg-money-green text-cream-white px-3 py-1.5 rounded-full text-sm font-medium shadow-lg whitespace-nowrap">
           Two Homes
         </div>
-        <div className="bg-space-cadet text-cream-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">
+        <div className="bg-space-cadet text-cream-white px-3 py-1.5 rounded-full text-sm font-medium shadow-lg whitespace-nowrap">
           ADA Accessible
         </div>
-        <div className="bg-white text-space-cadet px-3 py-1 rounded-full text-sm font-medium shadow-lg border">
+        <div className="bg-white text-space-cadet px-3 py-1.5 rounded-full text-sm font-medium shadow-lg border whitespace-nowrap">
           New 2024
         </div>
       </div>

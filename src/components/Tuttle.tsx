@@ -17,7 +17,7 @@ export default function Tuttle({ className = "" }: TuttleProps) {
             Welcome to <span className="text-money-green">Tuttle</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
-            A premium community with A- rated schools, 1 Gbps fiber internet, and 8% lower cost of living than national average. 
+            A premium community with A rated schools, true 1 GB fiber internet, and a wonderful low cost of living. 
             Tuttle combines educational excellence with modern infrastructure while maintaining authentic small-town charm.
           </p>
           
@@ -50,7 +50,7 @@ export default function Tuttle({ className = "" }: TuttleProps) {
             <div className="text-sm text-gray-600">Population (2024)</div>
           </div>
           <div className="text-center p-6 bg-gray-50 rounded-xl">
-            <div className="text-3xl font-bold text-money-green mb-2">A-</div>
+            <div className="text-3xl font-bold text-money-green mb-2">A</div>
             <div className="text-sm text-gray-600">School District Rating</div>
           </div>
           <div className="text-center p-6 bg-gray-50 rounded-xl">
@@ -77,7 +77,7 @@ export default function Tuttle({ className = "" }: TuttleProps) {
                     <School className="w-5 h-5 text-cream-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-space-cadet mb-1">A- Rated Schools</h4>
+                    <h4 className="font-semibold text-space-cadet mb-1">A Rated Schools</h4>
                     <p className="text-sm text-gray-600">95% graduation rate, 16:1 student-teacher ratio. Ranked #19 out of 328 OK districts for graduation success.</p>
                   </div>
                 </div>
@@ -88,7 +88,7 @@ export default function Tuttle({ className = "" }: TuttleProps) {
                   </div>
                   <div>
                     <h4 className="font-semibold text-space-cadet mb-1">Safe Community</h4>
-                    <p className="text-sm text-gray-600">19.3 officers per 10,000 residents (top 45% nationally). 80% of residents report feeling &ldquo;pretty safe&rdquo;.</p>
+                    <p className="text-sm text-gray-600">19.3 officers per 10,000 residents (top 45% nationally). More than 80% of residents report feeling &ldquo;pretty safe&rdquo;.</p>
                   </div>
                 </div>
 
@@ -107,8 +107,8 @@ export default function Tuttle({ className = "" }: TuttleProps) {
                     <TrendingUp className="w-5 h-5 text-cream-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-space-cadet mb-1">Premium Market</h4>
-                    <p className="text-sm text-gray-600">Homes sell in 32 days (vs. 67 days in 2024). Strong demand from finance & high-tech professionals.</p>
+                    <h4 className="font-semibold text-space-cadet mb-1">Community Stability</h4>
+                    <p className="text-sm text-gray-600">High civic engagement with festivals and Chamber events. Active community involvement protects long-term property values.</p>
                   </div>
                 </div>
               </div>
@@ -127,8 +127,8 @@ export default function Tuttle({ className = "" }: TuttleProps) {
                     <ShoppingBag className="w-5 h-5 text-cream-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-space-cadet mb-1">1 Gbps Fiber Internet</h4>
-                    <p className="text-sm text-gray-600">OEC Fiber covers 51.8% with gigabit speeds. Perfect for remote work and modern connectivity needs.</p>
+                    <h4 className="font-semibold text-space-cadet mb-1">True 1 Gbps Fiber Internet</h4>
+                    <p className="text-sm text-gray-600">Tuttle Fiber provides one of the only true 1 gigabyte fiber networks in Oklahoma. Perfect for remote work and modern connectivity needs.</p>
                   </div>
                 </div>
 
@@ -138,7 +138,7 @@ export default function Tuttle({ className = "" }: TuttleProps) {
                   </div>
                   <div>
                     <h4 className="font-semibold text-space-cadet mb-1">Community Events</h4>
-                    <p className="text-sm text-gray-600">20+ year Tuttle Ice Cream Festival, Coal Creek Balloon Fest, and active Chamber of Commerce.</p>
+                    <p className="text-sm text-gray-600">20+ year Tuttle Ice Cream Festival, Annual Easter Egg hunt, and an active homecoming with a parade.</p>
                   </div>
                 </div>
 
@@ -173,7 +173,7 @@ export default function Tuttle({ className = "" }: TuttleProps) {
               A Day in <span className="text-money-green">Tuttle</span>
             </h3>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Imagine waking up in a community where quality of life isn&apos;t just a promise—it&apos;s your daily reality.
+              Imagine waking up in a community where quality of life isn&apos;t just a promise—it&apos;s your daily&nbsp;reality.
             </p>
           </div>
 
@@ -188,7 +188,7 @@ export default function Tuttle({ className = "" }: TuttleProps) {
                   <h4 className="text-xl font-bold text-space-cadet">Morning</h4>
                 </div>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  <strong>7:00 AM:</strong> Start your day on your private 2-acre wooded retreat. Coffee on the porch overlooking mature trees while your kids get ready for Tuttle&apos;s A-rated schools.
+                  <strong>7:00 AM:</strong> Start your day on your private 2-acre wooded retreat. Coffee on the porch overlooking mature trees while your kids get ready for Tuttle&apos;s A rated schools.
                 </p>
                 <p className="text-gray-700 text-sm leading-relaxed">
                   <strong>8:15 AM:</strong> Drop the kids at school with confidence—95% graduation rate and 16:1 student-teacher ratios mean they&apos;re in excellent hands. Wave to neighbors you actually know.
@@ -207,10 +207,10 @@ export default function Tuttle({ className = "" }: TuttleProps) {
                   <h4 className="text-xl font-bold text-space-cadet">Afternoon</h4>
                 </div>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  <strong>12:30 PM:</strong> Lunch break at Pizza 360&apos;s famous $5 all-you-can-eat buffet, or grab fresh produce at the seasonal Farmers Market. Small-town dining with big-hearted service.
+                  <strong>12:30 PM:</strong> Lunch break at Jaime Joe&apos;s with great half price burgers on Mondays. Small-town dining with big-hearted service.
                 </p>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  <strong>3:30 PM:</strong> Kids walk home safely—Tuttle&apos;s 19.3 officers per 10,000 residents (top 45% nationally) means peace of mind is built into your daily routine.
+                  <strong>3:30 PM:</strong> Kids dismissed from school—Tuttle&apos;s 19.3 officers per 10,000 residents (top 45% nationally) means peace of mind is built into your daily routine.
                 </p>
                 <p className="text-gray-700 text-sm leading-relaxed">
                   <strong>4:00 PM:</strong> Family time in your spacious main house or let grandparents enjoy independence in the brand-new ADA-accessible guest house.
@@ -226,13 +226,13 @@ export default function Tuttle({ className = "" }: TuttleProps) {
                   <h4 className="text-xl font-bold text-space-cadet">Evening</h4>
                 </div>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  <strong>6:00 PM:</strong> Dinner at Lupita&apos;s Restaurant for authentic Mexican cuisine, then browse Main Street&apos;s unique shops like Lit&apos;r Knot Plantation Antiques.
+                  <strong>6:00 PM:</strong> Dinner at Lupita&apos;s Restaurant for authentic Mexican cuisine, then browse Main Street&apos;s unique shops.
                 </p>
                 <p className="text-gray-700 text-sm leading-relaxed">
                   <strong>7:30 PM:</strong> Attend a Tuttle Tigers game—ranked #15 of 398 Oklahoma schools for athletics—where the whole community comes together.
                 </p>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  <strong>9:00 PM:</strong> Relax by your fire pit under the stars, knowing tomorrow&apos;s commute to Norman (37 minutes) or OKC gives you access to big-city careers while living the good life.
+                  <strong>9:00 PM:</strong> Relax by your fire pit under the stars, knowing tomorrow&apos;s commute to Norman or OKC gives you access to big-city careers while living the good life.
                 </p>
               </div>
             </div>
@@ -242,7 +242,7 @@ export default function Tuttle({ className = "" }: TuttleProps) {
               <p className="text-gray-600 italic">
                 &ldquo;This isn&apos;t just where we live—it&apos;s where we thrive. Tuttle gives our family everything: 
                 top schools, real community, modern amenities, and the space to breathe. 
-                We&apos;re not just residents, we&apos;re <strong>Turtles</strong>—and proud of it.&rdquo;
+                We&apos;re not just residents, we&apos;re <strong>Tuttle</strong> residents—and proud of it.&rdquo;
               </p>
               <p className="text-sm text-gray-500 mt-2">— A Tuttle Family</p>
             </div>

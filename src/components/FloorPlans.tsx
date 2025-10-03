@@ -3,28 +3,25 @@ import { Map } from 'lucide-react';
 
 interface FloorPlansProps {
   className?: string;
-  onOpenFloorPlan: (house: string) => void;
 }
 
-export default function FloorPlans({ className = "", onOpenFloorPlan }: FloorPlansProps) {
+export default function FloorPlans({ className = "" }: FloorPlansProps) {
   return (
     <div className={`bg-white rounded-xl p-6 shadow-lg border border-gray-100 ${className}`}>
       {/* Section Header */}
       <div className="mb-6">
         <h2 className="text-2xl font-bold text-space-cadet mb-2" style={{ fontFamily: 'Midnight Gelactic, Avenir, Avenir Next, sans-serif' }}>
-          Floor Plans
+          Property Details
         </h2>
         <p className="text-gray-600">
-          Explore detailed layouts for both the main house and guest house
+          Detailed information about both the main house and guest house
         </p>
       </div>
 
       {/* Floor Plan Cards */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Main House Floor Plan */}
-        <button 
-          onClick={() => onOpenFloorPlan('Main House')}
-          className="group bg-gradient-to-br from-money-green/5 to-space-cadet/5 rounded-xl p-6 border border-gray-100 hover:shadow-xl transition-all duration-200 hover:border-money-green text-left"
+        {/* Main House Details */}
+        <div className="bg-gradient-to-br from-money-green/5 to-space-cadet/5 rounded-xl p-6 border border-gray-100 text-left"
         >
           <div className="space-y-4">
             {/* Header */}
@@ -58,18 +55,16 @@ export default function FloorPlans({ className = "", onOpenFloorPlan }: FloorPla
               <ul className="text-xs text-gray-600 space-y-1">
                 <li>• Open concept living & dining</li>
                 <li>• Updated kitchen with modern appliances</li>
-                <li>• Master suite with walk-in closet</li>
+                <li>• Master suite with dual walk-in closet</li>
                 <li>• Fireplace in family room</li>
                 <li>• Attached 2-car garage</li>
               </ul>
             </div>
           </div>
-        </button>
+        </div>
 
-        {/* Guest House Floor Plan */}
-        <button 
-          onClick={() => onOpenFloorPlan('Guest House')}
-          className="group bg-gradient-to-br from-space-cadet/5 to-money-green/5 rounded-xl p-6 border border-gray-100 hover:shadow-xl transition-all duration-200 hover:border-money-green text-left"
+        {/* Guest House Details */}
+        <div className="bg-gradient-to-br from-space-cadet/5 to-money-green/5 rounded-xl p-6 border border-gray-100 text-left"
         >
           <div className="space-y-4">
             {/* Header */}
@@ -116,7 +111,7 @@ export default function FloorPlans({ className = "", onOpenFloorPlan }: FloorPla
               </div>
             </div>
           </div>
-        </button>
+        </div>
       </div>
 
       {/* Additional Info */}

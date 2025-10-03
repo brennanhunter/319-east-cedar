@@ -52,9 +52,9 @@ export default function Home() {
               <Carousel />
             </div>
 
-            {/* Floor Plans - Third on mobile, back to left column on desktop */}
+            {/* Property Details - Third on mobile, back to left column on desktop */}
             <div className="lg:order-3">
-              <FloorPlans onOpenFloorPlan={openFloorPlan} />
+              <FloorPlans />
             </div>
 
             {/* Market Comparables - Fourth on mobile, stays in left column on desktop */}
