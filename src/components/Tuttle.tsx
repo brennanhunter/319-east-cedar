@@ -1,13 +1,17 @@
 'use client';
+import { useState } from 'react';
 import { MapPin, School, Car, ShoppingBag, Trees, Users, TrendingUp } from 'lucide-react';
 import Image from 'next/image';
 import { Sun, SunHorizon, MoonStars } from 'phosphor-react';
+import ContactModal from './ContactModal';
 
 interface TuttleProps {
   className?: string;
 }
 
 export default function Tuttle({ className = "" }: TuttleProps) {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+
   return (
     <section className={`bg-white py-16 ${className}`}>
       <div className="container mx-auto px-6">
@@ -259,7 +263,10 @@ export default function Tuttle({ className = "" }: TuttleProps) {
             Discover why professionals choose Tuttle for educational excellence and quality of life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-6 py-3 bg-white text-space-cadet rounded-lg font-semibold hover:bg-cream-white transition-colors">
+            <button 
+              onClick={() => setIsContactModalOpen(true)}
+              className="px-6 py-3 bg-white text-space-cadet rounded-lg font-semibold hover:bg-cream-white transition-colors"
+            >
               Schedule a Tour
             </button>
             <a 
@@ -273,6 +280,12 @@ export default function Tuttle({ className = "" }: TuttleProps) {
           </div>
         </div>
       </div>
+
+      {/* Contact Modal */}
+      <ContactModal 
+        isOpen={isContactModalOpen} 
+        onClose={() => setIsContactModalOpen(false)} 
+      />
     </section>
   );
 }
