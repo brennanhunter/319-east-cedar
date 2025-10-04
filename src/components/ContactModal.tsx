@@ -86,12 +86,12 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-space-cadet mb-2">Thank You!</h3>
-              <p className="text-gray-600">We've received your tour request and will contact you soon.</p>
+              <p className="text-gray-600">We&apos;ve received your tour request and will contact you soon.</p>
             </div>
           ) : (
             <>
               <p className="text-gray-600 mb-6">
-                Interested in seeing this beautiful property? Fill out the form below and we'll schedule your private tour of 319 E Cedar Drive.
+                Interested in seeing this beautiful property? Fill out the form below and we&apos;ll schedule your private tour of 319 E Cedar Drive.
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-4">
