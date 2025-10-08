@@ -32,9 +32,9 @@ export default function MarketComps({ className = "" }: MarketCompsProps) {
         <div className="border-t pt-4">
           {/* Price Positioning */}
           <div className="mb-6 p-4 bg-money-green/10 rounded-lg">
-            <h4 className="font-bold text-space-cadet mb-2">Why $739,999 is Excellent Value</h4>
+            <h4 className="font-bold text-space-cadet mb-2">Why $729,999 is Excellent Value</h4>
             <p className="text-sm text-gray-600 mb-2">
-              At <span className="font-semibold text-money-green">$187.29/sq ft</span>, this property offers exceptional value compared to recent sales ($195-$230/sq ft range).
+              At <span className="font-semibold text-money-green">$184.76/sq ft</span>, this property offers exceptional value compared to recent sales ($195-$230/sq ft range).
             </p>
             <p className="text-xs text-gray-500">
               Only property offering two complete homes + brand new ADA-accessible guest house
@@ -54,11 +54,11 @@ export default function MarketComps({ className = "" }: MarketCompsProps) {
                       <p className="text-gray-600">5 bed • 4 bath</p>
                     </div>
                     <div>
-                      <span className="font-semibold text-money-green">$739,999</span>
+                      <span className="font-semibold text-money-green">$729,999</span>
                       <p className="text-gray-600">3,951 sq ft</p>
                     </div>
                     <div>
-                      <span className="font-semibold text-money-green">$187.29/sf</span>
+                      <span className="font-semibold text-money-green">$184.76/sf</span>
                       <p className="text-gray-600">2.00 acres</p>
                     </div>
                     <div>

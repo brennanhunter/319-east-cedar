@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "319 E Cedar Drive, Tuttle OK - Two Homes on 2 Acres | $739,999",
+  title: "319 E Cedar Drive, Tuttle OK - Two Homes on 2 Acres | $729,999",
   description: "Stunning property featuring two complete homes on 2 wooded acres in Tuttle, OK. Main house (2,751 sq ft) + brand new ADA-accessible guest house (1,200 sq ft). A-rated schools, modern amenities, perfect for multi-generational living.",
   keywords: [
     "319 E Cedar Drive Tuttle",

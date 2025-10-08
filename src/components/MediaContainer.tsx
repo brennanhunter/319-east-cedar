@@ -77,7 +77,7 @@ export default function MediaContainer({
           {/* Property Details */}
           <div className="space-y-3 mt-4">
             <h3 className="text-xl font-bold text-space-cadet">
-              <span style={{ fontFamily: 'Avenir, Avenir Next, sans-serif' }}>$739,999</span>
+              <span style={{ fontFamily: 'Avenir, Avenir Next, sans-serif' }}>$729,999</span>
             </h3>
             <p className="text-gray-600">5 beds • 4 baths • 3,951 sq ft • 2 acres</p>
             <p className="text-sm text-gray-500">319 E Cedar Dr, Tuttle, OK 73089</p>
