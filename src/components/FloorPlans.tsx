@@ -122,7 +122,7 @@ export default function FloorPlans({ className = "" }: FloorPlansProps) {
           <span className="text-2xl font-bold text-space-cadet">3,951 sq ft</span>
         </div>
         <p className="text-xs text-gray-500 mt-2">
-          Perfect for multi-generational living, rental income, or home business
+          Perfect for multi-generational living or home business
         </p>
       </div>
     </div>

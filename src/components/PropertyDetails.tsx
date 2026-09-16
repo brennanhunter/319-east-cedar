@@ -248,24 +248,15 @@ export default function PropertyDetails() {
                 </div>
               </div>
 
-              {/* Investment & Lifestyle */}
+              {/* Lifestyle */}
               <div className="bg-gray-50 rounded-xl p-6">
                 <div className="flex items-center space-x-3 mb-4">
                   <div className="w-8 h-8 bg-gradient-to-br from-money-green to-space-cadet rounded-lg flex items-center justify-center">
                     <HouseHeart className="w-4 h-4 text-cream-white" />
                   </div>
-                  <h3 className="font-bold text-space-cadet">Investment & Lifestyle Opportunities</h3>
+                  <h3 className="font-bold text-space-cadet">Lifestyle Opportunities</h3>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
-                  <div>
-                    <h4 className="font-medium text-space-cadet mb-2">Rental Income</h4>
-                    <ul className="space-y-1 text-gray-600">
-                      <li>• Guest house rental potential</li>
-                      <li>• Airbnb/VRBO ready</li>
-                      <li>• Separate utilities possible</li>
-                      <li>• High demand area</li>
-                    </ul>
-                  </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                   <div>
                     <h4 className="font-medium text-space-cadet mb-2">Multi-Generational</h4>
                     <ul className="space-y-1 text-gray-600">
@@ -273,15 +264,6 @@ export default function PropertyDetails() {
                       <li>• Privacy for all residents</li>
                       <li>• Separate entrances</li>
                       <li>• Independent living spaces</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-space-cadet mb-2">Investment Potential</h4>
-                    <ul className="space-y-1 text-gray-600">
-                      <li>• Guest house rental income</li>
-                      <li>• Multi-generational living</li>
-                      <li>• Airbnb/VRBO potential</li>
-                      <li>• Recent updates protect value</li>
                     </ul>
                   </div>
                   <div>

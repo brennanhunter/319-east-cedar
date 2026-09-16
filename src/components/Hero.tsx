@@ -13,7 +13,7 @@ export default function Hero() {
       
       {/* Description */}
       <p className="text-lg text-gray-600 max-w-lg">
-        Two incredible homes on 2 acres! Beautifully updated main home plus brand new ADA-accessible guest house. Perfect for multi-generational living or investment income.
+        Two incredible homes on 2 acres! Beautifully updated main home plus brand new ADA-accessible guest house. Perfect for multi-generational living.
       </p>
       
       {/* Property Address & Location */}

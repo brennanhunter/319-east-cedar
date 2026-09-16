@@ -2,7 +2,6 @@
 import Carousel from '@/components/Carousel';
 import Hero from '@/components/Hero';
 import FloorPlans from '@/components/FloorPlans';
-import MarketComps from '@/components/MarketComps';
 import PropertyDetails from '@/components/PropertyDetails';
 import Tuttle from '@/components/Tuttle';
 
@@ -19,9 +18,9 @@ export default function Home() {
       {/* Main Content */}
       <section className="relative">
         <div className="container mx-auto px-6 py-12">
-          {/* Mobile Layout: Hero → Carousel → FloorPlans → MarketComps */}
-          {/* Desktop Layout: Hero + Carousel side by side, then FloorPlans + MarketComps */}
-          
+          {/* Mobile Layout: Hero → Carousel → FloorPlans */}
+          {/* Desktop Layout: Hero + Carousel side by side, then FloorPlans */}
+
           {/* Main Layout */}
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:items-start mb-16">
             {/* Mobile: Sequential Order / Desktop: Left Column */}
@@ -39,11 +38,6 @@ export default function Home() {
             {/* Property Details - Third on mobile, back to left column on desktop */}
             <div className="lg:order-3">
               <FloorPlans />
-            </div>
-
-            {/* Market Comparables - Fourth on mobile, stays in left column on desktop */}
-            <div className="lg:order-4">
-              <MarketComps />
             </div>
           </div>
           
